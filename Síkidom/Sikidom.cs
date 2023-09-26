@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace Síkidomok
 {
-    internal class Sikidom
+    abstract class Sikidom
     {
-        public string Síkidom;
+        public string tipus;
+        public abstract double kerület();
+        public abstract double terület();
         public override string ToString()
         {
-            return this.Síkidom;
+            return this.tipus;
         }
-        public Sikidom(string síkidom)
+        public Sikidom(string tipus)
         {
-            this.Síkidom = síkidom;
+            this.tipus = tipus;
         }
     }
 }

@@ -8,8 +8,22 @@ namespace Síkidomok
 {
     internal class Negyzet : Sikidom
     {
-        public Negyzet(string síkidom) : base(síkidom)
+        public double oldal;
+        public Negyzet(double oldal) : base("Négyzet")
         {
+            this.oldal = oldal;
+        }
+
+        public double Oldal { get => oldal;}
+
+        public override double kerület()
+        {
+            return oldal*4;
+        }
+
+        public override double terület()
+        {
+            return oldal*oldal;
         }
     }
 }
