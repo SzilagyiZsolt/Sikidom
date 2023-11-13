@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Síkidom;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Síkidomok
 {
-    internal class Kor : Sikidom
+    internal class Kor : Sikidom, IAtmeretez, IRajzolas
     {
         public double sugár;
         public double átmérő;
@@ -23,10 +24,27 @@ namespace Síkidomok
         {
             return 2*sugár*Math.PI;
         }
-
         public override double terület()
         {
             return sugár*sugár*Math.PI;
+        }
+        public void Kisebb()
+        {
+            Console.WriteLine("kisebb");
+        }
+
+        public void Nagyobb()
+        {
+            Console.WriteLine("nagyobb");
+        }
+        public void Vonalvastag()
+        {
+            Console.WriteLine("vastag");
+        }
+
+        public void Vonalvekony()
+        {
+            Console.WriteLine("vékony");
         }
     }
 }

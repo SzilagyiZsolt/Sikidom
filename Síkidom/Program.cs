@@ -22,6 +22,7 @@ namespace Síkidomok
                 {
                     Kor kor = (Kor)item; //Csak így juthatunk az egyedi adathoz, a sugárhoz
                     Console.WriteLine($"A kör kerülete: {Math.Round(item.kerület(),2)} - területe: {Math.Round(item.terület(),2)} - sugara: {kor.sugár} - átmérője: {kor.Átmérő}");
+                    kor.Kisebb();
                 }
                 else if (item.GetType()==typeof(Negyzet))
                 {

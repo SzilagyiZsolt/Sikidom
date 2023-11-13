@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAtmeretez.cs" />
+    <Compile Include="IRajzolas.cs" />
     <Compile Include="Kor.cs" />
     <Compile Include="Negyzet.cs" />
     <Compile Include="Program.cs" />
